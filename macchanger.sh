@@ -1,17 +1,22 @@
+###########Se comprueba que macchanger esta instalado y si no lo esta se instala#############
+sudo apt-get install macchanger
+#############################################################################################
+
+###################Seleccionar opcion del menu###############################################
 clear && echo -en "\e[3J"
 echo -e "\e[4m\e[1m\e[32m_______________MacChanger_______________"	
-echo -e "\e[0m\e[5mCambiar mac manualmente o automaticamnte"
+echo -e "\e[0m\e[5mChange MAC adress into a random number or a manual number."
 echo -e ""
-echo -e "\e[93m	0 - all"
-echo -e "\e[35m	1 - Auto eth0"
-echo -e "\e[35m	2 - Auto wlan0"
-echo -e "\e[35m	3 - Auto wlan1"
-echo -e "\e[35m	4 - Auto wlan2"
+echo -e "\e[93m	0 - Random all"
+echo -e "\e[35m	1 - Random eth0"
+echo -e "\e[35m	2 - Random wlan0"
+echo -e "\e[35m	3 - Random wlan1"
+echo -e "\e[35m	4 - Random wlan2"
 echo -e "\e[95m	5 - Manual eth0"
 echo -e "\e[95m	6 - Manual wlan0"
 echo -e "\e[95m	7 - Manual wlan1"
 echo -e "\e[95m	8 - Manual wlan2"
-echo -e "\e[93m	9 - VIEW all MAC"
+echo -e "\e[93m	9 - View all MAC"
 
 
 read n
@@ -104,3 +109,4 @@ case $n in
 	macchanger -s wlan2
 	;;
 esac
+#############################################################################################
